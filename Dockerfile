@@ -1,4 +1,4 @@
-FROM tiangolo/uwsgi-nginx-flask:flask-python3.5-index
+FROM tiangolo/uwsgi-nginx-flask:flask-python3.5
 MAINTAINER orvice <orvice@orx.me>
 
 COPY . /app
