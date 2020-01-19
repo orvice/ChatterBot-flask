@@ -1,6 +1,6 @@
 ChatterBot==0.5.5
 click==6.7
-Flask==0.12
+Flask==1.0
 future==0.16.0
 graypy==0.2.14
 itsdangerous==0.24
