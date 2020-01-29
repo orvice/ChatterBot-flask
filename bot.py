@@ -14,8 +14,10 @@ chatbot = ChatBot("deepThought",
     database="/data/database.db")
 
 trainer = ChatterBotCorpusTrainer(chatbot)
-trainer.train("chatterbot.corpus.chinese")
-
+trainer.train(
+    "chatterbot.corpus.english"
+    "chatterbot.corpus.chinese",
+)
 
 def talk(msg):
     return chatbot.get_response(msg)
