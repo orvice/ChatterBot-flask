@@ -12,8 +12,10 @@ chatbot = ChatBot("deepThought",
     input_adapter="chatterbot.input.TerminalAdapter",
     output_adapter="chatterbot.output.TerminalAdapter",
     database="/data/database.db")
-chatbot.set_trainer(ChatterBotCorpusTrainer)
-chatbot.train("chatterbot.corpus.chinese")
+
+trainer = ListTrainer(chatbot)   
+trainer.train(ChatterBotCorpusTrainer)
+trainer.train("chatterbot.corpus.chinese")
 
 
 def talk(msg):
