@@ -2,7 +2,7 @@ from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.trainers import ListTrainer
 
-chatbot = ChatBot("deepThought",storage_adapter="chatterbot.adapters.storage.JsonDatabaseAdapter",
+chatbot = ChatBot("deepThought",storage_adapter="chatterbot.storage.JsonDatabaseAdapter",
     database="/data/database.json")
 chatbot.set_trainer(ChatterBotCorpusTrainer)
 chatbot.train("chatterbot.corpus.chinese")
