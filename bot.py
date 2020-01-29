@@ -13,8 +13,7 @@ chatbot = ChatBot("deepThought",
     output_adapter="chatterbot.output.TerminalAdapter",
     database="/data/database.db")
 
-trainer = ListTrainer(chatbot)   
-trainer.train(ChatterBotCorpusTrainer)
+trainer = ChatterBotCorpusTrainer(chatbot)
 trainer.train("chatterbot.corpus.chinese")
 
 
