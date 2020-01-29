@@ -23,9 +23,9 @@ def ask():
 
 @app.route("/train", methods=['GET', 'POST'])
 def hello():
-    in = request.form['input']
+    input = request.form['input']
     res = request.form['res']
-    resp = bot.train(in,res)
+    resp = bot.train(input,res)
     data = {
         'resp': "%s" % resp
     }

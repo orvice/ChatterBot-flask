@@ -9,6 +9,6 @@ chatbot.train("chatterbot.corpus.chinese")
 def talk(msg):
     return chatbot.get_response(msg)
 
-def train(in,res):
-    chatbot.train([in,res])
+def train(input,res):
+    chatbot.train([input,res])
     return "ok"
