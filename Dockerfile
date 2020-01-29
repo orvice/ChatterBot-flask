@@ -1,6 +1,9 @@
 FROM tiangolo/uwsgi-nginx-flask:flask-python3.5
-MAINTAINER orvice <orvice@orx.me>
+LABEL MAINTAINER orvice<orvice@orx.me>
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
 COPY . /app
-RUN pip install -r requirements.txt
+
 
