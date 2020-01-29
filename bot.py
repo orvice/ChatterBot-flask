@@ -20,6 +20,6 @@ def talk(msg):
     return chatbot.get_response(msg)
 
 def train(input,res):
-    chatbot.set_trainer(ListTrainer)
-    chatbot.train([input,res])
+    trainer = ListTrainer(chatbot)
+    trainer.train([input,res])
     return "ok"
