@@ -16,7 +16,6 @@ chatbot = ChatBot("deepThought",
 trainer = ChatterBotCorpusTrainer(chatbot)
 trainer.train(
     "chatterbot.corpus.english"
-    "chatterbot.corpus.chinese",
 )
 
 def talk(msg):
